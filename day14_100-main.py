@@ -11,9 +11,9 @@ print("Paper beats Rock")
 print("If both players choose the same move, it's a tie!")
 print()
 
-print("ROCK can be represented by 'r', 'R', or '1'.")
-print("PAPER can be represented by 'p', 'P', or '2'.")
-print("SCISSORS can be represented by 's', 'S', or '3'.")
+print("ROCK can be represented by '1'.")
+print("PAPER can be represented by '2'.")
+print("SCISSORS can be represented by '3'.")
 print("Let's play!")
 print()
 
