@@ -1,4 +1,4 @@
 #100DaysOfReplit python code.
 
-https://www.replit.com/learn
+https://www.replit.com/
 JOIN ME!
