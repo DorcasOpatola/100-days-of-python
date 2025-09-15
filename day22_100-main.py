@@ -4,10 +4,10 @@ print("                    === IT'S RANDOM GUESSING GAME TIME !!! ===")
 print("                        Totally Random One-Million-to-One")
 print()
 var = random.randint(1, 1000000)
-counter = 0
+counter = 1
 
 while True:
-    var1 = int(input("Choose a number between 1 and 1,000,000. >> "))
+    var1 = int(input("Pick a number between 1 and 1,000,000. >> "))
 
     if var1 < 0:
         print("Wrong move pal!")
@@ -21,13 +21,14 @@ while True:
         counter += 1
         continue
     else:
-        print("YOU'VE GUESSED THE RIGHT ANSWER !")
+        print()
+        print("YOU'VE GUESSED THE RIGHT ANSWER !🏆🎖️🏆🎖️🏆🎖️🏆🎖️🏆🎖")
         print()
         counter += 1
         break
 
-print("It took you", counter, "guesses ro get the correct nummber.")
-print("Click 'run' to try again with a different number.")
+print("It took you", counter, "guesses to get the correct number.")
+print("Click 'RUN' to try again with a different number.")
 
 
 
