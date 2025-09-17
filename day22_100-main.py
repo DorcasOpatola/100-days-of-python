@@ -7,7 +7,9 @@ var = random.randint(1, 1000000)
 counter = 1
 
 while True:
-    var1 = int(input("Pick a number between 1 and 1,000,000. >> "))
+    print("I have picked a number in my mind. Can you guess it?")
+    print()
+    var1 = int(input("It's a number between 1 and 1,000,000. GUESSSSS >> "))
 
     if var1 < 0:
         print("Wrong move pal!")
