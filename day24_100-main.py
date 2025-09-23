@@ -1,5 +1,34 @@
-'''
+print("             === 🎲🎲🎲", "\033[35m", "INFINITY DICE GAME", "\033[0m", "🎲🎲🎲 ===")
+print()
+print()
+print("The Rules are simple, you choose how many sides the dice will have, and then you roll it.")
+print("You can roll it as many times as you want.")
 
+
+import random
+
+def dices():
+  print()
+  choose_dice = int(input("How many sides?🧐 (Natural numbers only) > "))
+  dice = random.randint(1, choose_dice)
+  print("You rolled", dice)
+  print()
+dices()
+
+while True:
+  roll_dice_again = input("Roll again? (y/n) > ")
+  if roll_dice_again == "y":
+    dices()
+  elif roll_dice_again == "n":
+    print()
+    print("🎲🎲")
+    print("Thanks for playing!")
+    exit()
+
+
+'''
+THIS CODE ASKS FOR TWO PIZZA TOPPINGS AND COMMENTS ON THEM.
+A SUBROUTINE IS CREATED, CALLED pizza_order, WHICH TAKES TWO PARAMETERS, topping1 AND topping2.
 
 def pizza_order(topping1, topping2):
   if topping1 == "pepperoni":
