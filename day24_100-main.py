@@ -26,6 +26,44 @@ while True:
     exit()
 
 
+
+'''
+THIS PROGRAM ASKS THE USER TO SET THE NUMBER OF SIDES ON A DICE.
+THEN IT ROLLS UP DIFFERENT SIDES EACH TIME.
+
+
+import random
+
+print("             === 🎲🎲🎲", "\033[35m", "INFINITY DICE GAME", "\033[0m", "🎲🎲🎲 ===")
+print()
+print()
+print("The Rules are simple, you choose how many sides the dice will have, and then you roll it.")
+print("You can roll it as many times as you want.")
+print()
+
+rollDice = int(input("How many sides?🧐 (Natural numbers only) > "))
+print()
+
+def dices(rollDice):
+  dice = random.randint(1, rollDice)
+  print("You rolled", dice)
+  print()
+dices(rollDice)
+
+while True:
+  roll_dice_again = input("Roll again? (y/n) > ")
+  if roll_dice_again == "y":
+    dices(rollDice)
+  elif roll_dice_again == "n":
+    print()
+    print("🎲🎲")
+    print("Thanks for playing!")
+    exit()
+
+'''
+
+
+
 '''
 THIS CODE ASKS FOR TWO PIZZA TOPPINGS AND COMMENTS ON THEM.
 A SUBROUTINE IS CREATED, CALLED pizza_order, WHICH TAKES TWO PARAMETERS, topping1 AND topping2.
