@@ -1,37 +1,3 @@
-print("             === 🎲🎲🎲", "\033[35m", "INFINITY DICE GAME", "\033[0m", "🎲🎲🎲 ===")
-print()
-print()
-print("The Rules are simple, you choose how many sides the dice will have, and then you roll it.")
-print("You can roll it as many times as you want.")
-
-
-import random
-
-def dices():
-  print()
-  choose_dice = int(input("How many sides?🧐 (Natural numbers only) > "))
-  dice = random.randint(1, choose_dice)
-  print("You rolled", dice)
-  print()
-dices()
-
-while True:
-  roll_dice_again = input("Roll again? (y/n) > ")
-  if roll_dice_again == "y":
-    dices()
-  elif roll_dice_again == "n":
-    print()
-    print("🎲🎲")
-    print("Thanks for playing!")
-    exit()
-
-
-
-'''
-THIS PROGRAM ASKS THE USER TO SET THE NUMBER OF SIDES ON A DICE.
-THEN IT ROLLS UP DIFFERENT SIDES EACH TIME.
-
-
 import random
 
 print("             === 🎲🎲🎲", "\033[35m", "INFINITY DICE GAME", "\033[0m", "🎲🎲🎲 ===")
@@ -60,8 +26,33 @@ while True:
     print("Thanks for playing!")
     exit()
 
-'''
+    
 
+'''
+THIS PROGRAM ASKS THE USER TO SET THE NUMBER OF SIDES ON A DICE, THEN ROLLS UP A SIDE.
+THEN IT ASKS IF THE USER WANTS TO ROLL AGAIN OR NOT.
+IF YES, IT ASKS AGAIN HOW MANY SIDES THE DICE WILL HAVE, THEN ROLLS IT.
+
+import random
+
+def dices():
+  print()
+  choose_dice = int(input("How many sides?🧐 (Natural numbers only) > "))
+  dice = random.randint(1, choose_dice)
+  print("You rolled", dice)
+  print()
+dices()
+
+while True:
+  roll_dice_again = input("Roll again? (y/n) > ")
+  if roll_dice_again == "y":
+    dices()
+  elif roll_dice_again == "n":
+    print()
+    print("🎲🎲")
+    print("Thanks for playing!")
+    exit()
+'''
 
 
 '''
