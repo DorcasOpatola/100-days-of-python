@@ -13,3 +13,10 @@ if x > 21:
     print("bigger")
 else:
     print("finis")
+
+
+n = 5
+while n>0:
+    print(n)
+    n = n - 0.1
+print("Blastoff!")
