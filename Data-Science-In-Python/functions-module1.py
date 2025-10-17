@@ -1,10 +1,10 @@
-'''def addNumbers (x, y, z = None, flag = False):
+def addNumbers (x, y, z = None, flag = False):
     if (flag):
         print("Flag is True!")
     if z == None:
         return x + y
     else:
-        return x + y + z'''
+        return x + y + z
  
 def num3 (q, w, e=None):
     if e is None:
@@ -12,9 +12,10 @@ def num3 (q, w, e=None):
     else:
         return q + w + e 
 
-num3(3, 55)
-num3(3, 55, 21)
-addNumbers(23, 9, 18)
+print(num3(3, 55))
+print(num3(3, 55, 21))
+print(addNumbers(23, 9, 18))
+
 
 see = input("Enter three numbers: ")
 parts = see.split()
@@ -32,5 +33,4 @@ def do_math(a, b, kind='add'):
     else:
         return a-b
 
-do_math(1, 2, kind='add')
-
+print(do_math(1, 2, kind='add'))
