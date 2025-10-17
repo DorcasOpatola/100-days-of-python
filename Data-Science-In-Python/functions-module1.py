@@ -10,12 +10,7 @@ def num3 (q, w, e=None):
     if e is None:
         return q + w
     else:
-        return q + w + e 
-
-print(num3(3, 55))
-print(num3(3, 55, 21))
-print(addNumbers(23, 9, 18))
-
+        return q + w + e
 
 see = input("Enter three numbers: ")
 parts = see.split()
@@ -33,4 +28,8 @@ def do_math(a, b, kind='add'):
     else:
         return a-b
 
+print()
+print(num3(3, 55))
+print(num3(3, 55, 21))
+print(addNumbers(23, 9, 18))
 print(do_math(1, 2, kind='add'))
