@@ -1,10 +1,10 @@
-def addNumbers (x, y, z = None, flag = False):
+'''def addNumbers (x, y, z = None, flag = False):
     if (flag):
         print("Flag is True!")
     if z == None:
         return x + y
     else:
-        return x + y + z
+        return x + y + z'''
  
 def num3 (q, w, e=None):
     if e is None:
@@ -24,3 +24,13 @@ elif len(parts) == 3:
     print(addNumbers(int(parts[0]), int(parts[1]), int(parts[2])))
 else:
     print("Too many numbers provided")
+
+
+def do_math(a, b, kind='add'):
+    if (kind=='add'):
+        return a+b
+    else:
+        return a-b
+
+do_math(1, 2, kind='add')
+
