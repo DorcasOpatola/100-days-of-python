@@ -16,16 +16,15 @@ def play():
   # Play the sound
   pygame.mixer.unpause()
   while True:
-    music_pause = int(input("Press 2 to stop the music:  "))
-    if music_pause == 2:
+    music_pause = input("Press 2 to stop the music:  ")
+    if music_pause == "2":
       pause()
       return
     else:
       continue
-    
-# Start taking user input and doing something with it.
-      
 
+
+# Start taking user input and doing something with it.
 
 while True:
   # clear the screen 
@@ -34,7 +33,6 @@ while True:
   print()
   print()
   print("==========    🎸🎶  MyPOD Music Player  🎶 🥁   ==========")
-
   # Show the menu
   print()
   print("    Controls for your MyPOD Music Player    ")
@@ -46,11 +44,13 @@ while True:
   # take user's input
   pressRequest = input("Your selection >  ")
   # check whether you should call the play() subroutine depending on user's input
-  if pressRequest == 1:
-    play()
+  if pressRequest == "1":
     print("Playing some proper tunes!")
     time.sleep(1)
-  elif pressRequest == 3:
+    print("🎶🎶🥁🎸")
+    print()
+    play()
+  elif pressRequest == "3":
     print("Goodbye!")
     break
   else:
