@@ -29,18 +29,6 @@ def strengthGenerator():
     strength = int(((roll12_6 * roll12_8) /2) + 12)
     return strength
 
-def battle():
-    char1 = rollDice(6)
-    char2 = rollDice(6)
-    if char1 == char2:
-        print("It's a tie!")
-    elif char1 > char2:
-        print("Character 1 wins!")
-    else:
-        print("Character 2 wins!")
-    return char1, char2
-    
-
 while True:
     print("                     === ⚔️⚔️ ", "\033[35m", "CHARACTER BUILDER", "\033[0m", " ⚔️⚔️ ===")
     print()
